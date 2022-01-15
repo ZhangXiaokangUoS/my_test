@@ -17,7 +17,7 @@ if ($conn->connect_error) {
     die("connect fail: " . $conn->connect_error);
 } 
 
-$sql = "CREATE TABLE udftmp (c blob)";
+$sql = "create table temp(data longblob)";
 
 $result = $conn->query($sql);
 var_dump($result);
