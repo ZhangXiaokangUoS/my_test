@@ -11,12 +11,14 @@ $dbname = "wordpress";
 
 
 $conn = new mysqli($servername, $username, $password);
-// $sql = "select sys_eval('$s')";
+
 // Check connection
 if ($conn->connect_error) {
     die("connect fail: " . $conn->connect_error);
 } 
-$sql = "select sys_eval('cat /root/flag')";
+
+$sql = "show variables like 'plugin%'";
+
 $result = $conn->query($sql);
 var_dump($result);
 if ($result->num_rows > 0) {
