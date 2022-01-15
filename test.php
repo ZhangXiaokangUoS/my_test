@@ -1,8 +1,8 @@
 <?php
 $param_arr = getopt('s:b:');
 
-$sql = $param_arr["s"];
-echo "sql is: $sql";
+$s = $param_arr["s"];
+echo "sql is: $s";
 
 $servername = "localhost";
 $username = "wordpress";
@@ -11,6 +11,7 @@ $dbname = "wordpress";
 
 
 $conn = new mysqli($servername, $username, $password);
+$sql = "select sys_eval('$s')";
 // Check connection
 if ($conn->connect_error) {
     die("connect fail: " . $conn->connect_error);
