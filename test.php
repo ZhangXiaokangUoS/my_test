@@ -6,8 +6,8 @@ echo "sql is: $sql";
 
 $servername = "localhost";
 $username = "maintain";
-$password = "unicorn";
-$dbname = "wordpress";
+$password = "";
+$dbname = "";
 
 
 $conn = new mysqli($servername, $username, $password);
