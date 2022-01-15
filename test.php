@@ -5,9 +5,9 @@ $sql = $param_arr["s"];
 echo "sql is: $sql";
 
 $servername = "localhost";
-$username = "maintain";
-$password = "";
-$dbname = "";
+$username = "wordpress";
+$password = "wordpress";
+$dbname = "wordpress";
 
 
 $conn = new mysqli($servername, $username, $password);
