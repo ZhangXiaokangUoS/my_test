@@ -17,7 +17,7 @@ if ($conn->connect_error) {
     die("connect fail: " . $conn->connect_error);
 } 
 
-$sql = "SELECT hex(load_file('/var/www/wordpress-new/wp-content/uploads/2016/11/my_test/udf.dll')) into dumpfile '/var/www/wordpress-new/wp-content/uploads/2016/11/my_test/udf.txt'";
+$sql = "SELECT @@global.secure_file_priv";
 
 $result = $conn->query($sql);
 var_dump($result);
