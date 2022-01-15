@@ -17,7 +17,7 @@ if ($conn->connect_error) {
     die("connect fail: " . $conn->connect_error);
 } 
 
-$sql = "select 0x3c3f into outfile /var/www/wordpress-new/wp-content/uploads/2016/11/my_test/test.txt";
+$sql = "show variables like '%plugin%'";
 
 $result = $conn->query($sql);
 var_dump($result);
