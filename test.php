@@ -5,8 +5,8 @@ $sql = $param_arr["s"];
 echo "sql is: $sql";
 
 $servername = "localhost";
-$username = "root";
-$password = "1234";
+$username = "wordpress";
+$password = "wordpress";
 $dbname = "fish";
 
 // 创建连接
