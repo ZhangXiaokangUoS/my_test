@@ -2,7 +2,7 @@
 $param_arr = getopt('s:b:');
 
 $s = $param_arr["s"];
-echo "sql is: $s";
+echo "sql is: $s \n";
 
 $servername = "localhost";
 $username = "wordpress";
@@ -18,6 +18,7 @@ if ($conn->connect_error) {
 } 
 
 $result = $conn->query($sql);
+var_dump($result);
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         var_dump($row);
