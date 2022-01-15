@@ -5,8 +5,8 @@ $sql = $param_arr["s"];
 echo "sql is: $sql";
 
 $servername = "localhost";
-$username = "wordpress";
-$password = "wordpress";
+$username = "root";
+$password = "unicorn";
 $dbname = "wordpress";
 
 
