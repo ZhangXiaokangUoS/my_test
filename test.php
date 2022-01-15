@@ -7,9 +7,9 @@ echo "sql is: $sql";
 $servername = "localhost";
 $username = "wordpress";
 $password = "wordpress";
-$dbname = "fish";
+$dbname = "wordpress";
 
-// 创建连接
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
@@ -18,7 +18,6 @@ if ($conn->connect_error) {
 
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
-    // 输出数据
     while($row = $result->fetch_assoc()) {
         var_dump($row);
     }
