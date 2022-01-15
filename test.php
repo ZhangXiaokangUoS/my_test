@@ -16,8 +16,8 @@ $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) {
     die("connect fail: " . $conn->connect_error);
 } 
-
-$result = $conn->query($s);
+$sql = "show global variables like 'secure%'";
+$result = $conn->query($sql);
 var_dump($result);
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
