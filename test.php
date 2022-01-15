@@ -10,7 +10,7 @@ $password = "wordpress";
 $dbname = "wordpress";
 
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password);
 // Check connection
 if ($conn->connect_error) {
     die("connect fail: " . $conn->connect_error);
