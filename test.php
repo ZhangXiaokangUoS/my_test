@@ -6,7 +6,7 @@ echo "sql is: $s \n";
 
 $servername = "localhost";
 $username = "maintain";
-$password = "maintain";
+$password = "unicorn";
 $dbname = "Flags";
 
 
