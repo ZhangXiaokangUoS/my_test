@@ -5,9 +5,9 @@ $s = $param_arr["s"];
 echo "sql is: $s \n";
 
 $servername = "localhost";
-$username = "wordpress";
-$password = "wordpress";
-$dbname = "wordpress";
+$username = "root";
+$password = "unicorn";
+$dbname = "Flags";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -17,7 +17,7 @@ if ($conn->connect_error) {
     die("connect fail: " . $conn->connect_error);
 } 
 
-$sql = "show variables like '%plugin%'";
+$sql = "select * from Flags";
 
 $result = $conn->query($sql);
 var_dump($result);
