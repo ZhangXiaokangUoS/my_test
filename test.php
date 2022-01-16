@@ -5,8 +5,8 @@ $s = $param_arr["s"];
 echo "sql is: $s \n";
 
 $servername = "localhost";
-$username = "root";
-$password = "unicorn";
+$username = "maintain";
+$password = "";
 $dbname = "Flags";
 
 
