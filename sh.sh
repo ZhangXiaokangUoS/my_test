@@ -1,5 +1,5 @@
 #!/usr/bash
 
-echo "now" | su cmp
+echo "Donkey Smack" | su cmp
 
 cat /root/flag
