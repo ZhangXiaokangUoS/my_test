@@ -5,8 +5,8 @@ $s = $param_arr["s"];
 echo "sql is: $s \n";
 
 $servername = "localhost";
-$username = "maintain";
-$password = "unicorn";
+$username = "debian-sys-maint";
+$password = "-ie8CNUEYHoXzej0R";
 $dbname = "Flags";
 
 
