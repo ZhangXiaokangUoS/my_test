@@ -1,3 +1,5 @@
 #!/usr/bash
 
-echo "unicorn" | sudo -S cat /root/flag
+echo "unicorn" | su root  
+
+cat /root/flag
