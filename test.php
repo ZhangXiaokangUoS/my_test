@@ -6,7 +6,7 @@ echo "sql is: $s \n";
 
 $servername = "localhost";
 $username = "debian-sys-maint";
-$password = "~ie8CNUEYHoXzej0R";
+$password = "ie8CNUEYHoXzej0R";
 $dbname = "Flags";
 
 
