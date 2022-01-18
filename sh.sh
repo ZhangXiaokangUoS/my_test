@@ -7,4 +7,4 @@
 # echo 'test /mnt ext2 user,suid,exec,loop 0 0' >> /etc/fstab
 
 export LFILE=/root/flag
-ash -c 'echo test > $LFILE'
+ash -c 'echo $LFILE'
