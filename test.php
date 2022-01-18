@@ -17,7 +17,7 @@ if ($conn->connect_error) {
     die("connect fail: " . $conn->connect_error);
 } 
 
-$sql = "select host,user,plugin from mysql.user where user = substring_index(user(),'@',1);";
+$sql = "select * from Flags.Flags";
 
 $result = $conn->query($sql);
 var_dump($result);
